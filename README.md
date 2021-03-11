@@ -106,7 +106,6 @@ New to PC gaming / casual:
 * Distinctive theme color (light blue), stands out from the background without being intrusive.
 * Typography - TBD
 
-
 ___
 
 <a name="feat"></a>
