@@ -26,8 +26,7 @@ body {
     -o-box-shadow: 0 0 50px rgb(0, 225, 255);
 }
 
-
-/*-------------------------------------------Section 1-Title / Progress*/
+/*-------------------------------------------Title / Progress*/
 #progress {
     /*background-color: red;*/
     height: 20%;
@@ -76,7 +75,7 @@ h1 {
     margin: auto;
 }
 
-/*-------------------------------------------Section 2-Game*/
+/*-------------------------------------------Game Grid*/
 #gameplay {
    /* background-color: orangered;*/
     height: 80%;
@@ -128,6 +127,7 @@ h1 {
     border: 2px solid darkred;
 }
 
+/*-------------------------------------------Individual Cards*/
 .memory-card {
     width: calc(16.666% - 6px);
     height: calc(25% - 6px);
@@ -181,7 +181,7 @@ h1 {
     box-shadow:         inset 0 0 5px black;
 }
 
-/*-------------------------------------------Section 3-Navigation*/
+/*-------------------------------------------Navigation*/
 #navigation {
     /*background-color: green;*/
     height: 100%;
@@ -222,7 +222,7 @@ h1 {
     -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
     -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
-
+/*-------------------------------------------Instructions Modal*/
 .i-modal {
   display: none;
   position: fixed;
@@ -246,6 +246,21 @@ h1 {
   width: 80%; 
 }
 
+.close-btn {
+  color: rgb(0, 225, 255);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*-------------------------------------------Difficulty Modal*/
 .d-modal {
   display: none;
   position: fixed;
@@ -269,20 +284,6 @@ h1 {
   width: 80%; 
 }
 
-.close-btn {
-  color: rgb(0, 225, 255);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .modal-diff-btn {
     width: 25%;
     height: 50%;
@@ -296,6 +297,7 @@ h1 {
     -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
 
+/*-------------------------------------------Settings Modal*/
 .s-modal {
   display: none;
   position: fixed;
