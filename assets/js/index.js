@@ -1,3 +1,9 @@
+//https://stackoverflow.com/questions/33747398/html-audio-tag-volume//
+var audio = document.getElementById("myaudio");
+    audio.volume = 0.2;
+
+
+
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
 var span = document.getElementsByClassName("close-btn")[0];

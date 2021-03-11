@@ -9,9 +9,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Match the Pairs!</title>
+    <title>Match the Pairs! - Memory Game</title>
 </head>
 <body>
+<!--------------------------------------------------------------------------------Navigation Buttons-->
 <div id="memory-game">
     <div id="progress">
         <div id="progress-inner">
@@ -19,19 +20,19 @@
                 <h1>Match the Pairs!</h1>
             </div>
             <div id="highscore">
-                <p>Time:</p>
-                <p>60</p>
+                <p>Highscore:</p>
+                <p>0</p>
             </div>
             <div id="objectives">
-                <p>Flips:</p>
-                <p>0</p>
+                <p>Pairs remaining:</p>
+                <p>12</p>
             </div>
         </div>
     </div>
     <div id="gameplay">
         <div id="game">
-            <div id="grid-inner">
-                <section class="memory-game easy-game">
+                <div id="grid-inner">
+                    <section class="memory-game easy-game">
                         <div class="memory-card" data-framework="laugh-beam">
                             <div class="front-face"><i class="far fa-laugh-beam"></i></div>
                             <div class="back-face"><i class="fas fa-dragon"></i></div>
@@ -325,12 +326,11 @@
                             <div class="back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                     </section>
+                </div>
             </div>
-        </div>
-    </div>
-    <div id="navigation">
-        <div id="navigation-inner">
-            <div class="nav-btn">
+        <div id="navigation">
+            <div id="navigation-inner">
+                <div class="nav-btn">
 <!--https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
                     <button id="reset-btn" onclick="window.location.reload();">Reset</button>
                 </div>
@@ -343,7 +343,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="nav-btn">
+                <div class="nav-btn">
                     <button id="difficulty-btn">Difficulty</button>
                     <div id="diffModal" class="d-modal">
                         <div class="d-modal-content">
@@ -355,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-            <div class="nav-btn">
+                <div class="nav-btn">
                     <button id="settings-btn">Settings</button>
                     <div id="settingsModal" class="s-modal">
                         <div class="s-modal-content">
@@ -368,6 +368,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </div>
