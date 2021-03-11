@@ -55,6 +55,15 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
+(function shuffle() {
+  cards.forEach(card => {
+    let randomPos = Math.floor(Math.random() * 12);
+    card.style.order = randomPos;
+  });
+})();
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
 var span = document.getElementsByClassName("close-btn")[0];
