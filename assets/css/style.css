@@ -75,3 +75,28 @@ h1 {
     width: 20%;
     margin: auto;
 }
+
+/*-------------------------------------------Section 2-Game*/
+#gameplay {
+   /* background-color: orangered;*/
+    height: 80%;
+    width: 100%;
+}
+
+#game {
+   /*border: 2px solid red;*/
+    height: 100%;
+    width: 70%;
+    float: left;
+    position: relative;
+}
+
+#grid-inner {
+    /*border: 2px solid blue;*/
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
