@@ -12,3 +12,18 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var diffModal = document.getElementById("diffModal");
+var difficultyBtn = document.getElementById("difficulty-btn");
+var diffSpan = document.getElementById("diffSpan");
+difficultyBtn.onclick = function() {
+  diffModal.style.display = "block";
+}
+diffSpan.onclick = function() {
+  diffModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == diffModal) {
+    diffModal.style.display = "none";
+  }
+}
