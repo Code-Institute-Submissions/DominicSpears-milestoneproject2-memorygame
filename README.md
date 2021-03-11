@@ -102,9 +102,10 @@ New to PC gaming / casual:
 [Modal Wireframes](assets/wireframes/MP2-modals-med.png)
 
 ### Surface Plane
-* Background
-* Colors 
-* Typography
+* Dark background to minimize eye strain, means that game and fonts must be lighter.
+* Distinctive theme color (light blue), stands out from the background without being intrusive.
+* Typography - TBD
+
 
 ___
 
