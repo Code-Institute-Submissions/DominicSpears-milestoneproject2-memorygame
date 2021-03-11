@@ -12,7 +12,7 @@
     <title>Match the Pairs! - Memory Game</title>
 </head>
 <body>
-<!--------------------------------------------------------------------------------Navigation Buttons-->
+<!-----------------------------------------------------Title/Progress div-->
 <div id="memory-game">
     <div id="progress">
         <div id="progress-inner">
@@ -29,9 +29,11 @@
             </div>
         </div>
     </div>
+<!-----------------------------------------------------Game Grid-->
     <div id="gameplay">
         <div id="game">
                 <div id="grid-inner">
+<!-----------------------------------------------------Easy Game-->
                     <section class="memory-game easy-game">
                         <div class="memory-card" data-framework="laugh-beam">
                             <div class="front-face"><i class="far fa-laugh-beam"></i></div>
@@ -130,6 +132,7 @@
                             <div class="back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                     </section>
+<!-----------------------------------------------------Medium Game-->
                     <section class="memory-game med-game">
                         <div class="memory-card" data-framework="laugh-beam">
                             <div class="front-face"><i class="far fa-laugh-beam"></i></div>
@@ -228,6 +231,7 @@
                             <div class="back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                     </section>
+<!-----------------------------------------------------Hard Game-->
                     <section class="memory-game hard-game">
                         <div class="memory-card" data-framework="laugh-beam">
                             <div class="front-face"><i class="far fa-laugh-beam"></i></div>
@@ -328,12 +332,15 @@
                     </section>
                 </div>
             </div>
+<!-----------------------------------------------------Navigation Div-->
         <div id="navigation">
             <div id="navigation-inner">
+<!-----------------------------------------------------Reset Button-->
                 <div class="nav-btn">
 <!--https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
                     <button id="reset-btn" onclick="window.location.reload();">Reset</button>
                 </div>
+<!-----------------------------------------------------Instructions Button-->
                 <div class="nav-btn">
                     <button id="instructions-btn">Instructions</button>
                     <div id="instructionsModal" class="i-modal">
@@ -343,6 +350,7 @@
                         </div>
                     </div>
                 </div>
+<!-----------------------------------------------------Difficulty Button-->
                 <div class="nav-btn">
                     <button id="difficulty-btn">Difficulty</button>
                     <div id="diffModal" class="d-modal">
@@ -355,6 +363,7 @@
                         </div>
                     </div>
                 </div>
+<!-----------------------------------------------------Settings Button-->
                 <div class="nav-btn">
                     <button id="settings-btn">Settings</button>
                     <div id="settingsModal" class="s-modal">
