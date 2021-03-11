@@ -50,6 +50,11 @@ function unflipCards() {
   }, 750);
 }
 
+function resetBoard() {
+  [hasFlippedCard, lockBoard] = [false, false];
+  [firstCard, secondCard] = [null, null];
+}
+
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
 var span = document.getElementsByClassName("close-btn")[0];
