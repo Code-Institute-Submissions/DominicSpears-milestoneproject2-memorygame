@@ -52,19 +52,46 @@ ___
 
 #### Potential Users
 
-
+Users
+* Experienced with PC gaming
+* New to PC gaming / casual
 
 ### Scope Plane
 
 #### Features specific for users
 
+Experienced with PC Gaming
 
+* In depth instructions to explain game mechanics.
+* Gameplay that is easy to learn but difficult to master.
+* Increases difficult levels to test progression.
+* Replay value via a scoring system...
+* Or a rating based on the last performance.
+* A score breakdown so they can understand how to get a higher score.
+
+New to PC gaming / casual
+* Basic / fundamental instructions. 
+* Visually striking and memorable
+* An easy level to help get players started.
+* An ending screen/modal to congratulate the player upon completion.
 
 ### Structure Plane
 
 #### User stories
 
- 
+Experienced with PC gaming:
+
+1. As an experienced gamer, I want to understand the game thoroughly by reading a comprehensive set of instructions.
+2. As an experienced gamer, I want to know my final score/performance level and how my score / performance could be improved.
+3. As an experienced gamer, I want a challenge and an experience which is difficult to master.
+4. As an experienced gamer, I want the game to be easy to view over extended playthroughs, without causing eye strain.
+
+New to PC gaming / casual: 
+
+1. As a new gamer, I want instructions that are simple to follow and a game concept that I can understand easily.
+2. As a new gamer, I want an easy level to solidify my understanding before being tested further.
+3. As a new gamer, I want a congratulations screen when completing the game to provide a sense of accomplishment.
+4. As a new gamer, I want the game to be visually appealing and memorable. 
 
 ### Skeleton Plane
 
