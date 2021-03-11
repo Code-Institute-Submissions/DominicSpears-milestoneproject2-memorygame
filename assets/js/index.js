@@ -36,9 +36,19 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
-
+  resetBoard();
 }
 
+function unflipCards() {
+  lockBoard = true;
+
+  setTimeout(() => {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+
+    resetBoard();
+  }, 750);
+}
 
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
