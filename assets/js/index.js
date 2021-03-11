@@ -2,7 +2,6 @@
 var audio = document.getElementById("myaudio");
     audio.volume = 0.2;
 
-
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -64,6 +63,37 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+//difficulty buttons//
+var sectionEasy = document.getElementById("easy-game");
+var sectionMed = document.getElementById("med-game");
+var sectionHard = document.getElementById("hard-game");
+var easyBtn = document.getElementById("easy");
+var medBtn = document.getElementById("medium");
+var hardBtn = document.getElementById("hard");
+var modalDiff = document.getElementsByClassName("d-modal")[0]; 
+
+easyBtn.onclick = function() {
+    modalDiff.style.display = "none";
+    sectionEasy. style.display = "flex";
+    sectionMed.style.display = "none";
+    sectionHard.style.display = "none";
+}
+
+medBtn.onclick = function() {
+    modalDiff.style.display = "none";
+    sectionEasy.style.display = "none";
+    sectionMed.style.display = "flex";
+    sectionHard.style.display = "none";
+}
+
+hardBtn.onclick = function() {
+    modalDiff.style.display = "none";
+    sectionEasy.style.display = "none";
+    sectionMed.style.display = "none";
+    sectionHard.style.display = "flex";
+}
+//difficulty buttons end//
+
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
 var span = document.getElementsByClassName("close-btn")[0];
@@ -79,21 +109,6 @@ window.onclick = function(event) {
   }
 }
 
-var diffModal = document.getElementById("diffModal");
-var difficultyBtn = document.getElementById("difficulty-btn");
-var diffSpan = document.getElementById("diffSpan");
-difficultyBtn.onclick = function() {
-  diffModal.style.display = "block";
-}
-diffSpan.onclick = function() {
-  diffModal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == diffModal) {
-    diffModal.style.display = "none";
-  }
-}
-
 var settingsModal = document.getElementById("settingsModal");
 var settingsBtn = document.getElementById("settings-btn");
 var settingsSpan = document.getElementById("settingsSpan");
@@ -106,5 +121,20 @@ settingsSpan.onclick = function() {
 window.onclick = function(event) {
   if (event.target == settingsModal) {
     settingsModal.style.display = "none";
+  }
+}
+
+var diffModal = document.getElementById("diffModal");
+var difficultyBtn = document.getElementById("difficulty-btn");
+var diffSpan = document.getElementById("diffSpan");
+difficultyBtn.onclick = function() {
+  diffModal.style.display = "block";
+}
+diffSpan.onclick = function() {
+  diffModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == diffModal) {
+    diffModal.style.display = "none";
   }
 }
