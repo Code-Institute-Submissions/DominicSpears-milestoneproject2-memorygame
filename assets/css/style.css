@@ -124,3 +124,30 @@ h1 {
     position: relative;
     /*border: 2px solid red;*/
 }
+
+.memory-game {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    box-shadow: 0 0 15px rgb(0, 225, 255);
+    -moz-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -o-box-shadow: 0 0 15px rgb(0, 225, 255);
+    perspective: 1000px;
+    display: flex;
+}
+
+
+
+.memory-card {
+    width: calc(16.666% - 6px);
+    height: calc(25% - 6px);
+    position: relative;
+    border: 2px solid black;
+    margin: 3px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    cursor: pointer;
+}
