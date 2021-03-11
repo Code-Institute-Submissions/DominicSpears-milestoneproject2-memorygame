@@ -97,9 +97,9 @@ New to PC gaming / casual:
 
 #### Wireframes
 
-[Wireframe](Link)
+[Main Page Wireframe](assets/wireframes/MP2-mainpage-med.png)
 
-
+[Modal Wireframes](assets/wireframes/MP2-modals-med.png)
 
 ### Surface Plane
 * Background
