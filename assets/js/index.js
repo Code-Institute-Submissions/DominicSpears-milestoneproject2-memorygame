@@ -27,3 +27,18 @@ window.onclick = function(event) {
     diffModal.style.display = "none";
   }
 }
+
+var settingsModal = document.getElementById("settingsModal");
+var settingsBtn = document.getElementById("settings-btn");
+var settingsSpan = document.getElementById("settingsSpan");
+settingsBtn.onclick = function() {
+  settingsModal.style.display = "block";
+}
+settingsSpan.onclick = function() {
+  settingsModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == settingsModal) {
+    settingsModal.style.display = "none";
+  }
+}
