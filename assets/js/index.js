@@ -3,20 +3,6 @@ var audio = document.getElementById("myaudio");
     audio.volume = 0.2;
 
 /*-------------------------------------------Card */
-var diffModal = document.getElementById("diffModal");
-var difficultyBtn = document.getElementById("difficulty-btn");
-var diffSpan = document.getElementById("diffSpan");
-difficultyBtn.onclick = function() {
-  diffModal.style.display = "block";
-}
-diffSpan.onclick = function() {
-  diffModal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == diffModal) {
-    diffModal.style.display = "none";
-  }
-}
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
