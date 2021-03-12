@@ -295,9 +295,6 @@
 <!-----------------------------------------------------Navigation Div-->
         <div id="navigation">
             <div id="navigation-inner">
-                <div class="nav-btn">
-                    <button id="start-btn">Start</button>
-                </div>
 <!-----------------------------------------------------Reset Button-->
                 <div class="nav-btn">
 <!--https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
@@ -343,13 +340,20 @@
             </div>
         </div>
     </div>
-    <div id="gameoverModal" class="g-modal">
-    <div class="g-modal-content">
-        <span id="gameoverSpan" class="close-btn">&times;</span>
-        <p>Game Over</p>
-        <button id="reset-btn-2" onclick="window.location.reload();">Reset</button>
+    <div id="startModal" class="st-modal">
+        <div class="st-modal-content">
+            <span id="startSpan" class="close-btn">&times;</span>
+            <p>Match the Pairs!</p>
+            <button id="start-btn">Start</button>
+        </div>
     </div>
-</div>
+    <div id="gameoverModal" class="g-modal">
+        <div class="g-modal-content">
+            <span id="gameoverSpan" class="close-btn">&times;</span>
+            <p>Game Over</p>
+            <button id="reset-btn-2" onclick="window.location.reload();">Reset</button>
+        </div>
+    </div>
 </div>
 
 

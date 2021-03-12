@@ -1,6 +1,30 @@
 //https://stackoverflow.com/questions/33747398/html-audio-tag-volume//
 var audio = document.getElementById("myaudio");
-    audio.volume = 0.2;
+    audio.volume = 0.1;
+
+
+    
+/*-------------------------------------------Start Game */
+//game board locked before button press
+//on start button click, unlock game board
+//also start timer
+/*-------------------------------------------Start Modal*/
+var startModal = document.getElementById("startModal");
+var startBtn = document.getElementById("start-btn");
+var startSpan = document.getElementById("startSpan");
+startBtn.onclick = function() {
+  startModal.style.display = "none";
+}
+startSpan.onclick = function() {
+  startModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == startModal) {
+    startModal.style.display = "none";
+  }
+}
+
+
 
 /*-------------------------------------------Card */
 const cards = document.querySelectorAll('.memory-card');
@@ -62,10 +86,6 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /*-------------------------------------------Timer*/
 
-function countdownTimer() {
-    const difference = +new Date("2021-01-01") - +new Date();
-    let remaining = "Time's up!";
-}
 
 /*-------------------------------------------Difficulty Buttons
 var sectionEasy = document.getElementById("easy-game");
