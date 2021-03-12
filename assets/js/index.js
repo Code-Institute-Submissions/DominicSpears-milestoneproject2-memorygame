@@ -9,20 +9,6 @@ var audio = document.getElementById("myaudio");
 //on start button click, unlock game board
 //also start timer
 /*-------------------------------------------Start Modal*/
-var startModal = document.getElementById("startModal");
-var startBtn = document.getElementById("start-btn");
-var startSpan = document.getElementById("startSpan");
-startBtn.onclick = function() {
-  startModal.style.display = "none";
-}
-startSpan.onclick = function() {
-  startModal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == startModal) {
-    startModal.style.display = "none";
-  }
-}
 
 
 
@@ -167,13 +153,17 @@ window.onclick = function(event) {
   }
 }
 
+/*-------------------------------------------Start Modal*/
+var startModal = document.getElementById("startModal");
+var startBtn = document.getElementById("start-btn");
+var startSpan = document.getElementById("startSpan");
+startBtn.onclick = function() {
+  startModal.style.display = "none";
+}
+
 /*-------------------------------------------Gameover Modal*/
 var gameoverModal = document.getElementById("gameoverModal");
-//var settingsBtn = document.getElementById("settings-btn");
 var gameoverSpan = document.getElementById("gameoverSpan");
-/*settingsBtn.onclick = function() {
-  settingsModal.style.display = "block";
-}*/
 gameoverSpan.onclick = function() {
   gameoverModal.style.display = "none";
 }
