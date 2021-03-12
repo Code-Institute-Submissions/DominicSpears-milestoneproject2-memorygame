@@ -74,6 +74,13 @@ function resetBoard() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+/*-------------------------------------------Timer*/
+
+function countdownTimer() {
+    const difference = +new Date("2021-01-01") - +new Date();
+    let remaining = "Time's up!";
+}
+
 /*-------------------------------------------Difficulty Buttons
 var sectionEasy = document.getElementById("easy-game");
 var sectionMed = document.getElementById("med-game");
@@ -151,5 +158,21 @@ settingsSpan.onclick = function() {
 window.onclick = function(event) {
   if (event.target == settingsModal) {
     settingsModal.style.display = "none";
+  }
+}
+
+/*-------------------------------------------Gameover Modal*/
+var gameoverModal = document.getElementById("gameoverModal");
+//var settingsBtn = document.getElementById("settings-btn");
+var gameoverSpan = document.getElementById("gameoverSpan");
+/*settingsBtn.onclick = function() {
+  settingsModal.style.display = "block";
+}*/
+gameoverSpan.onclick = function() {
+  gameoverModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == gameoverModal) {
+    gameoverModal.style.display = "none";
   }
 }

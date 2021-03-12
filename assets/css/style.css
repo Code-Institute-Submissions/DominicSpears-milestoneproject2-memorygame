@@ -169,7 +169,7 @@ h1 {
     transform: rotateY(180deg);
     border: 2px solid rgb(0, 225, 255);
     background: rgb(0, 225, 255);
-    padding: 10px 0px;
+    padding: 0px 0px;
     color: black;
     font-size: 40px;
     width: 100%;
@@ -319,4 +319,44 @@ h1 {
   padding: 10px;
   border: 1px solid rgb(0, 225, 255);
   width: 80%; 
+}
+
+/*-------------------------------------------Gameover Modal*/
+.g-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* modal is full width of game only*/
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,1);
+  border-radius: 40px;
+}
+
+.g-modal-content {
+  background-color: rgb(25, 25, 25);
+  color: rgb(0, 225, 255);
+  margin: 20% auto; 
+  padding: 10px;
+  border: 1px solid rgb(0, 225, 255);
+  width: 80%; 
+}
+
+.g-modal-content {
+    padding: 20px;
+}
+
+#reset-btn-2 {
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    color: rgb(0, 225, 255);
+    background-color: black;
+    box-shadow: 0 0 15px rgb(0, 225, 255);
+    -moz-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
