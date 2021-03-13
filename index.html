@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/index2.js" async></script>
     <title>Match the Pairs! - Memory Game</title>
 </head>
 <body>
@@ -330,33 +331,37 @@
                         <div class="s-modal-content">
                             <span id="settingsSpan" class="close-btn">&times;</span>
                             <p>Music!</p>
-                            <audio id="myaudio" controls autoplay loop>
+                            <!--<audio id="myaudio" controls autoplay loop>
                                 <source src="assets/music/background.mp3" type="audio/mpeg">
                                 Your browser does not support the audio element.
-                            </audio>
+                            </audio>-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="startModal" class="st-modal">
+    <div id="startModal" class="st-modal overlay-text">
         <div class="st-modal-content">
             <p>Welcome to Match the Pairs!</p>
             <button id="start-btn">Start</button>
         </div>
     </div>
-    <div id="gameoverModal" class="g-modal">
+    <div id="gameoverModal" class="g-modal overlay-text">
         <div class="g-modal-content">
             <span id="gameoverSpan" class="close-btn">&times;</span>
             <p>Game Over</p>
-            <button id="reset-btn-2" onclick="window.location.reload();">Reset</button>
+            <button class="reset-btn-2" onclick="window.location.reload();">Reset</button>
+        </div>
+    </div>
+    <div id="victoryModal" class="v-modal overlay-text">
+        <div class="v-modal-content">
+            <span id="victorySpan" class="close-btn">&times;</span>
+            <p>Victory</p>
+            <button class="reset-btn-2" onclick="window.location.reload();">Reset</button>
         </div>
     </div>
 </div>
-
-
-<script type="text/javascript" src="assets/js/index.js"></script>
 <!--Credit: Template code taken from Link, heavily modified-->
 </body>
 </html>

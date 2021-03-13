@@ -280,7 +280,8 @@ h1 {
 
 /*-------------------------------------------Start/gameover Modal*/
 .st-modal, 
-.g-modal {
+.g-modal,
+.v-modal {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -301,8 +302,13 @@ h1 {
     display: none;
 }
 
+.v-modal {
+    display: none;
+}
+
 .st-modal-content,
-.g-modal-content {
+.g-modal-content, 
+.v-modal-content {
   background-color: rgb(25, 25, 25);
   color: rgb(0, 225, 255);
   margin: 20% auto; 
@@ -313,8 +319,19 @@ h1 {
   text-align: center;
 }
 
-#start-btn,
-#reset-btn-2 {
+#start-btn {
+    width: 70%;
+    height: 50%;
+    border-radius: 15px;
+    color: rgb(0, 225, 255);
+    background-color: black;
+    box-shadow: 0 0 15px rgb(0, 225, 255);
+    -moz-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -o-box-shadow: 0 0 15px rgb(0, 225, 255);
+}
+
+.reset-btn-2 {
     width: 70%;
     height: 50%;
     border-radius: 15px;
