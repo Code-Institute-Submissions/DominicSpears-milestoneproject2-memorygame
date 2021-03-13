@@ -1,3 +1,14 @@
+class AudioController {
+    constructor() {
+        this.bgMusic = new Audio('assets/music/background.mp3');
+        this.bgMusic.volume = 0.01;
+        this.bgMusic.loop = true;
+    }
+    startMusic() {
+        this.bgMusic.play();
+    }
+}
+
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
@@ -7,7 +18,9 @@ function ready() {
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
             overlay.classList.remove("visible");
-            //start game        
+            //start game
+            let audioController = new AudioController();
+            audioController.startMusic();    
         });
     });
 
