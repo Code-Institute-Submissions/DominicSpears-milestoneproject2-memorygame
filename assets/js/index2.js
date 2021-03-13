@@ -14,11 +14,11 @@ class AudioController {
     }
     victory() {
         this.stopMusic();
-        this.victory.play();
+        /*this.victorySound.play();*/
     }
     gameOver() {
         this.stopMusic();
-        this.gameOver.play();
+        /*this.gameOverSound.play();*/
     }
 }
 //game class
@@ -64,8 +64,40 @@ class MatchThePairs {
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
 
-            //if statement match check
+            if(this.cardToCheck)
+                this.checkForCardMatch(card);
+            else
+                this.cardToCheck = card;
         }
+    }
+    checkForCardMatch(card) {
+        if(this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else 
+            this.cardMisMatch(card, this.cardToCheck);
+
+        this.cardToCheck = null;
+    }
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        /*card1.classList.add('matched');
+        card2.classList.add('matched');
+        this.audioController.match();*/
+        if(this.matchedCards.length === this.cardsArray.length)
+            this.victory(); 
+    }
+    cardMisMatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = false;
+        }, 1000);
+    }
+    //identify card by source
+    getCardType(card) {
+        return card.getElementsByClassName('card-value')[0].src;
     }
     startCountDown() {
         return setInterval(() => {
@@ -83,7 +115,7 @@ class MatchThePairs {
     victory() {
         clearInterval(this.countDown);
         /*this.audioController.victory();*/
-        document.getElementById('victory-text').classList.add('visible');
+        document.getElementById('victoryModal').classList.add('visible');
     }
     //shuffle function, fisher yates function
     shuffleCards() {
@@ -95,7 +127,6 @@ class MatchThePairs {
     }
 //check "if card if ok to flip" boolean  
     canFlipCard(card) {
-        return true;
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }    
 }
