@@ -77,7 +77,13 @@ class MatchThePairs {
     }
     gameOver() {
         clearInterval(this.countDown);
+        /*this.audioController.gameOver();*/
         document.getElementById('gameoverModal').classList.add('visible');
+    }
+    victory() {
+        clearInterval(this.countDown);
+        /*this.audioController.victory();*/
+        document.getElementById('victory-text').classList.add('visible');
     }
     //shuffle function, fisher yates function
     shuffleCards() {
@@ -97,7 +103,8 @@ class MatchThePairs {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-    let game = new MatchThePairs(5, cards);
+//set game duration by altering number here    
+    let game = new MatchThePairs(100, cards);
 
 //each time you click on an overlay
     overlays.forEach(overlay => {
