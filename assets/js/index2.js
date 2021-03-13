@@ -41,8 +41,21 @@ class MatchThePairs {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
-
-        this.shuffleCards();
+    //wait 500ms before function
+    setTimeout(() => {
+            this.audioController.startMusic();
+            this.shuffleCards();
+            this.countDown = this.startCountDown();
+            this.busy = false;
+        }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
+    }
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+        });
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
@@ -53,6 +66,18 @@ class MatchThePairs {
 
             //if statement match check
         }
+    }
+    startCountDown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
+    }
+    gameOver() {
+        clearInterval(this.countDown);
+        document.getElementById('gameoverModal').classList.add('visible');
     }
     //shuffle function, fisher yates function
     shuffleCards() {
@@ -72,7 +97,7 @@ class MatchThePairs {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
-    let game = new MatchThePairs(100, cards);
+    let game = new MatchThePairs(5, cards);
 
 //each time you click on an overlay
     overlays.forEach(overlay => {
