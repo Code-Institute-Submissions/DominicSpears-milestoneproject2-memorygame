@@ -132,21 +132,40 @@ h1 {
     width: calc(16.666% - 6px);
     height: calc(20% - 6px);
     position: relative;
-    border: 2px solid black;
+    /*border: 2px solid black;
     margin: 3px;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-    cursor: pointer;
+    cursor: pointer;*/
 }
 
-.memory-card:active {
+.card:hover {
+  cursor: pointer;
+}
+
+/*.memory-card:active {
     transform: scale(.97);
     transition: transform .2s;
 }
 
 .memory-card.flip {
     transform: rotateY(180deg);
+}*/
+
+.card-face {
+  /*position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;*/
+  transition: transform 500ms ease-in-out;
 }
 
 .back-face {
@@ -179,6 +198,14 @@ h1 {
     -moz-box-shadow:    inset 0 0 5px black;
     -webkit-box-shadow: inset 0 0 5px black;
     box-shadow:         inset 0 0 5px black;
+}
+/*tutorial yotube*/
+.card.visible .back-face {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .front-face {
+  transform: rotateY(0)
 }
 
 /*-------------------------------------------Navigation*/

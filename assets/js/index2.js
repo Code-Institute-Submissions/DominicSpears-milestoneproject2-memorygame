@@ -41,24 +41,40 @@ class MatchThePairs {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+    }
+
+    flipCard(card) {
+        if(this.canFlipCard(card)) {
+            //count flips as clicked
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
+        }
+    }
+
+//check "if card if ok to flip" boolean  
+    canFlipCard(card) {
+        return true;
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }    
 }
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
+    let game = new MatchThePairs(100, cards);
 
 //each time you click on an overlay
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
             overlay.classList.remove("visible");
-            //start game   
+            game.startGame();  
         });
     });
 
     cards.forEach(card => {
         card.addEventListener("click", () => {
-//flipcard function
+            game.flipCard(card);
         });
     });
 }
