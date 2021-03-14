@@ -59,7 +59,7 @@ body {
 
 h1 {
     /*border: 2px solid blue;*/
-    font-size: 65px;
+    font-size: 50px;
     margin-left: 20px;
 }
 
@@ -347,4 +347,85 @@ img {
 
 .overlay-text.visible {
     display: flex;
+}
+
+/*-------------------------------------------------Media Queries*/
+@media only screen and (max-width: 1150px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #highscore,
+    #objectives {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #memory-game {
+        height: 95%;
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #progress {
+        height: 20%;
+        width: 100%;
+    }
+
+    #progress-inner {
+        display: block;
+        float: left;
+    }
+
+    h1 {
+        border: 2px solid blue;
+        font-size: 20px;
+        float: left;
+    }
+
+    #highscore {
+       float: none;
+    }
+
+    #objectives {
+        float: none;
+    }
+
+    #game {
+        border: 2px solid red;
+        height: 100%;
+        width: 100%;
+    }
+
+    #grid-inner {
+        /*border: 2px solid blue;*/
+        width: 100%;
+        height: 90%;
+    }
+
+    .memory-game {
+        width: 100%;
+        height: 50%;
+        border: 2px solid gold;
+    }
+
+    #navigation {
+        background-color: green;
+        height: 20%;
+        width: 100%;
+        float: left;
+    }
+
+    #navigation-inner {
+        height: 100%; 
+        width: 90%;
+    }
+
+    .nav-btn {
+        width: 70%;
+        height: 33.33%;
+        /*border: 2px solid red;*/
+    }
 }
