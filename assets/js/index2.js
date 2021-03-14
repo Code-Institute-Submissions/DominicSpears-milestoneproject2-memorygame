@@ -161,13 +161,9 @@ if(document.readyState === "loading") {
 /*-------------------------------------------Instructions Modal*/
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
-var span = document.getElementsByClassName("close-btn")[0];
 btn.onclick = function() {
   modal.style.display = "block";
   clearInterval(this.countDown);
-}
-span.onclick = function() {
-  modal.style.display = "none";
 }
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -178,12 +174,8 @@ window.onclick = function(event) {
 /*-------------------------------------------Difficulty Modal*/
 var diffModal = document.getElementById("diffModal");
 var difficultyBtn = document.getElementById("difficulty-btn");
-var diffSpan = document.getElementById("diffSpan");
 difficultyBtn.onclick = function() {
   diffModal.style.display = "block";
-}
-diffSpan.onclick = function() {
-  diffModal.style.display = "none";
 }
 window.onclick = function(event) {
   if (event.target == diffModal) {

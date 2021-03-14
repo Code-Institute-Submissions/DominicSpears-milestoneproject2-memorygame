@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sarpanch:wght@400;600;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@ body {
     background-color: black;
     height: 100vh;
     position: relative;
+    font-family: Roboto, sans-serif;
 }
 
 #memory-game {
@@ -51,6 +54,7 @@ body {
     position: relative;
     height: 90%;
     width: 60%;
+    font-family: Sarpanch, sans-serif;
 }
 
 h1 {
@@ -337,8 +341,8 @@ img {
 }
 
 .reset-btn-2 {
-    width: 70%;
-    height: 50%;
+    width: 30%;
+    height: 20%;
     border-radius: 15px;
     color: rgb(0, 225, 255);
     background-color: black;
