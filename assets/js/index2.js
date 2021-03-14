@@ -125,17 +125,18 @@ class MatchThePairs {
             this.cardsArray[i].style.order = randIndex;
         }
     }
+    
 //check "if card if ok to flip" boolean  
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
-    }    
+    }  
 }
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
 //set game duration by altering number here    
-    let game = new MatchThePairs(100, cards);
+    let game = new MatchThePairs(15, cards);
 
 //each time you click on an overlay
     overlays.forEach(overlay => {
@@ -159,12 +160,15 @@ if(document.readyState === "loading") {
     ready();
 }
 
+
+
 /*-------------------------------------------Instructions Modal*/
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
 var span = document.getElementsByClassName("close-btn")[0];
 btn.onclick = function() {
   modal.style.display = "block";
+  clearInterval(this.countDown);
 }
 span.onclick = function() {
   modal.style.display = "none";
