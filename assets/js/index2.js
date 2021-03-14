@@ -14,11 +14,9 @@ class AudioController {
     }
     victory() {
         this.stopMusic();
-        /*this.victorySound.play();*/
     }
     gameOver() {
         this.stopMusic();
-        /*this.gameOverSound.play();*/
     }
 }
 //game class
@@ -136,7 +134,7 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
 //set game duration by altering number here    
-    let game = new MatchThePairs(15, cards);
+    let game = new MatchThePairs(60, cards);
 
 //each time you click on an overlay
     overlays.forEach(overlay => {
@@ -160,8 +158,6 @@ if(document.readyState === "loading") {
     ready();
 }
 
-
-
 /*-------------------------------------------Instructions Modal*/
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
@@ -176,5 +172,21 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+  }
+}
+
+/*-------------------------------------------Difficulty Modal*/
+var diffModal = document.getElementById("diffModal");
+var difficultyBtn = document.getElementById("difficulty-btn");
+var diffSpan = document.getElementById("diffSpan");
+difficultyBtn.onclick = function() {
+  diffModal.style.display = "block";
+}
+diffSpan.onclick = function() {
+  diffModal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == diffModal) {
+    diffModal.style.display = "none";
   }
 }

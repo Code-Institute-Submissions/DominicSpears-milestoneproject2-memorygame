@@ -396,8 +396,9 @@
                     <button id="instructions-btn">Instructions</button>
                     <div id="instructionsModal" class="i-modal">
                         <div class="i-modal-content">
-                            <span class="close-btn">&times;</span>
-                            <p>How to play!</p>
+                            <h4>How to play!</h4>
+                            <p>Match the cards</p>
+                            <button class="reset-btn-2" onclick="window.location.reload();">Reset</button>
                         </div>
                     </div>
                 </div>
@@ -406,25 +407,10 @@
                     <button id="difficulty-btn">Difficulty</button>
                     <div id="diffModal" class="d-modal">
                         <div class="d-modal-content">
-                            <span id="diffSpan" class="close-btn">&times;</span>
                             <p>Choose your difficulty!</p>
                             <button class="modal-diff-btn" id="easy">Easy</button>
                             <button class="modal-diff-btn" id="medium">Medium</button>
                             <button class="modal-diff-btn" id="hard">Hard</button>
-                        </div>
-                    </div>
-                </div>
-<!-----------------------------------------------------Settings Button-->
-                <div class="nav-btn">
-                    <button id="settings-btn">Settings</button>
-                    <div id="settingsModal" class="s-modal">
-                        <div class="s-modal-content">
-                            <span id="settingsSpan" class="close-btn">&times;</span>
-                            <p>Music!</p>
-                            <!--<audio id="myaudio" controls autoplay loop>
-                                <source src="assets/music/background.mp3" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                            </audio>-->
                         </div>
                     </div>
                 </div>
@@ -433,8 +419,7 @@
     </div>
     <div id="startModal" class="st-modal overlay-text visible">
         <div class="st-modal-content">
-            Welcome to Match the Pairs
-            <p>Click to Start!</p>
+            <p id="start">Welcome to Match the Pairs - Click to Start!</p>
         </div>
     </div>
     <div id="gameoverModal" class="g-modal overlay-text">
