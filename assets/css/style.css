@@ -301,7 +301,7 @@ img {
   color: rgb(0, 225, 255);
   border: 1px solid rgb(0, 225, 255);
   width: 80%;
-  height: 30%;
+  height: 20%;
   position: relative;
   text-align: center;
 }
@@ -322,9 +322,9 @@ img {
     cursor: pointer;
 }
 
-.reset-btn-2 {
-    width: 30%;
-    height: 20%;
+.new-game {
+    width: 40%;
+    height: 30%;
     border-radius: 15px;
     color: rgb(0, 225, 255);
     background-color: black;
@@ -383,32 +383,33 @@ img {
     }
 
     #progress-inner {
+        display: block;
         width: 90%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        justify-content: left;
     }
 
     #title {
         width: 100%;
-        border: 2px solid blue;
+        height: 30%;
     }
 
     h1 {
-        border: 2px solid blue;
-        
+        width: 100%;
+        margin-left: 0px;
         font-size: 20px;
         float: left;
     }
 
-    /*#highscore {
-       
-    }
-
+    #highscore,
     #objectives {
-        
-    }*/
+        width: 50%;
+        height: 70%;
+        float: left;
+    }
 
     #game {
         
@@ -468,5 +469,9 @@ img {
         width: 100%;
         height: 80%;
         font-size: 15px;
+    }
+
+    .new-game {
+        width: 80%;
     }
 }
