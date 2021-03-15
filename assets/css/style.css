@@ -265,11 +265,28 @@ img {
   margin: 20% auto; 
   padding: 10px;
   border: 1px solid rgb(0, 225, 255);
-  width: 80%; 
+  width: 80%;
 }
 
 h4 {
     font-family: Orbitron, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(25, 25, 25);
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 155, 175);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 225, 255); 
 }
 
 /*-------------------------------------------Difficulty Modal*/
@@ -481,6 +498,15 @@ h4 {
         width: 70%;
         height: 33.33%;
         /*border: 2px solid red;*/
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .i-modal-content, 
+    .d-modal-content {
+        font-size: 15px;
     }
 
     #reset-btn,
