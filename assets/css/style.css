@@ -265,6 +265,10 @@ img {
   width: 80%; 
 }
 
+h4 {
+    font-family: Sarpanch, sans-serif;
+}
+
 /*-------------------------------------------Difficulty Modal*/
 .modal-diff-btn {
     width: 25%;
