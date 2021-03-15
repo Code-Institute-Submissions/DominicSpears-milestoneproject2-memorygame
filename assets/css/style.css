@@ -301,7 +301,7 @@ img {
   color: rgb(0, 225, 255);
   border: 1px solid rgb(0, 225, 255);
   width: 80%;
-  height: 20%;
+  height: 30%;
   position: relative;
   text-align: center;
 }
@@ -471,7 +471,18 @@ img {
         font-size: 15px;
     }
 
+    .st-modal-content {
+        width: 90%;
+        height: 30%;
+    }
+
+    .g-modal-content, 
+    .v-modal-content {
+        width: 90%;
+        height: 20%;
+    }
+
     .new-game {
-        width: 80%;
+        width: 70%;
     }
 }
