@@ -215,13 +215,26 @@ ___
 
 #### Media
 ##### Images
+All images  were located via bing images, searched under "free to share and use" licences.
+
 ##### Music
-##### Videos
-##### Text
+* Background music, taken from ZapSplat website via their standard license [ZapSplat](https://www.zapsplat.com/music/game-music-action-fun-and-funky-electronic-disco-with-wah-guitars-electro-bass-and-drums/)
 
 
 #### Ackowledgements
 
 * Inspired by [W3Schools.com](https://www.w3schools.com/html/html_intro.asp)
 General reference / tutorial assistance.
+
+* Inspired by [FreeCodeCamp](https://www.youtube.com/watch?v=ZniVgo8U7ek)
+General reference.
+
+* Inspired by [Code with A K](https://www.youtube.com/watch?v=tjyDOHzKN0w)
+General reference.
+
+* Inspired by [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+General reference.
+
+* Inspired by [Coding Hack](https://www.youtube.com/watch?v=4BOSWPnC9Uk)
+General reference.
 ___
