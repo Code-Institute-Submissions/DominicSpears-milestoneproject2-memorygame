@@ -91,7 +91,7 @@ class MatchThePairs {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
             this.busy = false;
-        }, 1000);
+        }, 600);
     }
     //identify card by source
     getCardType(card) {
