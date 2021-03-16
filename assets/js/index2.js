@@ -114,7 +114,7 @@ class MatchThePairs {
         clearInterval(this.countDown);
         /*this.audioController.victory();*/
         document.getElementById('victoryModal').classList.add('visible');
-    }
+    }    
     //shuffle function, fisher yates function
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
@@ -123,11 +123,17 @@ class MatchThePairs {
             this.cardsArray[i].style.order = randIndex;
         }
     }
-    
 //check "if card if ok to flip" boolean  
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }  
+}
+//scorecard on victory modal
+var x = myFunction(100, 3);
+document.getElementById("score").innerHTML = x;
+
+function myFunction(a, b) {
+    return a - b;
 }
 //make arrays from individual overlays and cards
 function ready() {
