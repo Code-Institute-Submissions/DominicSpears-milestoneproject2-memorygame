@@ -123,7 +123,6 @@ ___
 ##### Active
 * Countdown clock, begins counting down when the game begins and counts down in second incraments to zero at which the game ends.
 * Flip counter, increases by 1 each time the player clicks.  
-##### To Do 
 
 #### Game Grid
 ##### Active
@@ -134,33 +133,40 @@ flip back to their original position.
 * If the cards match, the cards will remain upright. They cannot be selected again.
 * Only two cards can be selected at one time.
 * During the flip back, all remaining cards lock and cannot be selected until the flip animation finishes. 
+* Successful completion of the game reveals the victory modal.
+* Unsuccessful completion (timer runs out) reveals game over modal.
 
 #### Navigation Buttons
 ##### Active
 * Reset button, resets the page to its original settings. 
-* Instructions button, reveals a modal with game instructions and a scrollbar on the sid eof the page.
-* Instructions button, return button resets the page to the start screen, beginning the countdown from the start. 
+* Instructions button, reveals a modal with game instructions 
 * Difficulty button, opens new modal with three difficulty buttons.
 ##### To Do  
-* Reset button, reset the game without resetting other features e.g. the music.
-* Difficulty button, three difficulty buttons alter the game timer to increase/decrease difficulty.
+* Reset button, reset the game without resetting the whole page and therefore other features e.g. the music.
 * Settings button, shows a new modal to provide user options e.g. music volume.
 
 #### Instructions Modal
 ##### Active
-##### To Do 
+* Srollbar on the side of the page.
+* Return button resets the page to the starting screen, beginning the countdown again.  
 
 #### Difficulty Modal
-##### Active
+* Click outside of the modal content to close. 
 ##### To Do 
+* Difficulty button, three difficulty buttons alter the game timer to increase/decrease difficulty.
 
 #### Victory Modal
 ##### Active
+* New game button closes the modal and restarts the countdown timer.
+* Clicking outside the modal produces the same result.
 ##### To Do 
+* Score produced by taking total flips from a set number(100). Fewer flips means higher final score.
+* Score multiplier based on difficulty, dependent on adding dificulty levels.
 
 #### Game Over Modal
 ##### Active
-##### To Do 
+* New game button closes the modal and restarts the countdown timer.
+* Clicking outside the modal produces the same result.
 
 <a name="test"></a>
 ### Testing
