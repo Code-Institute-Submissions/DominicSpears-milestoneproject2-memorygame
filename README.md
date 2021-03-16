@@ -215,13 +215,13 @@ ___
 
 #### Media
 ##### Images
-All images  were located via bing images, searched under "free to share and use" licences.
+* All images  were located via bing images, searched under "free to share and use" licences.
 
 ##### Music
 * Background music, taken from ZapSplat website via their standard license [ZapSplat](https://www.zapsplat.com/music/game-music-action-fun-and-funky-electronic-disco-with-wah-guitars-electro-bass-and-drums/)
 
 
-#### Ackowledgements
+#### Acknowledgements
 
 * Inspired by [W3Schools.com](https://www.w3schools.com/html/html_intro.asp)
 General reference / tutorial assistance.
@@ -237,4 +237,7 @@ General reference.
 
 * Inspired by [Coding Hack](https://www.youtube.com/watch?v=4BOSWPnC9Uk)
 General reference.
+
+* Inspired by [Google Play Store](https://play.google.com/store/search?q=memory%20match%20games)
+General reference, inspiration.
 ___
