@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="Memory Game" content="Match the pairs memory game.">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/f10a3754d1.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/index2.js" async></script>
+    <script src="assets/js/index2.js" async></script>
     <title>Match the Pairs! - Memory Game</title>
 </head>
 <body>
-<!-----------------------------------------------------Title/Progress div-->
+<!--Title/Progress div-->
 <div id="memory-game">
     <div id="progress">
         <div id="progress-inner">
@@ -30,163 +27,163 @@
             </div>
         </div>
     </div>
-<!-----------------------------------------------------Game Grid-->
+<!--Game Grid-->
     <div id="gameplay">
         <div id="game">
                 <div id="grid-inner">
-                    <section class="memory-game hard-game">
+                    <div class="memory-game hard-game">
                         <div class="memory-card card" data-framework="laugh-beam">
                             <div class="card-face front-face">
                                 <i class="far fa-laugh-beam"></i>
-                                <img class="card-value" src="assets/images/link1.png">
+                                <img class="card-value" src="assets/images/link1.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="laugh-beam">
                             <div class="card-face front-face">
                                 <i class="far fa-laugh-beam"></i>
-                                <img class="card-value" src="assets/images/link1.png">
+                                <img class="card-value" src="assets/images/link1.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tired">
                             <div class="card-face front-face">
                                 <i class="far fa-tired"></i>
-                                <img class="card-value" src="assets/images/link2.png">
+                                <img class="card-value" src="assets/images/link2.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tired">
                             <div class="card-face front-face">
                                 <i class="far fa-tired"></i>
-                                <img class="card-value" src="assets/images/link2.png">
+                                <img class="card-value" src="assets/images/link2.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="rolling">
                             <div class="card-face front-face">
                                 <i class="far fa-meh-rolling-eyes"></i>
-                                <img class="card-value" src="assets/images/link3.png">
+                                <img class="card-value" src="assets/images/link3.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="rolling">
                             <div class="card-face front-face">
                                 <i class="far fa-meh-rolling-eyes"></i>
-                                <img class="card-value" src="assets/images/link3.png">
+                                <img class="card-value" src="assets/images/link3.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <!--<div class="memory-card card" data-framework="cry">
                             <div class="card-face front-face">
                                 <i class="far fa-sad-cry"></i>
-                                <img class="card-value" src="assets/images/link4.png">
+                                <img class="card-value" src="assets/images/link4.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="cry">
                             <div class="card-face front-face">
                                 <i class="far fa-sad-cry"></i>
-                                <img class="card-value" src="assets/images/link4.png">
+                                <img class="card-value" src="assets/images/link4.png"  alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="wink">
                             <div class="card-face front-face">
                                 <i class="far fa-kiss-wink-heart"></i>
-                                <img class="card-value" src="assets/images/link5.png">
+                                <img class="card-value" src="assets/images/link5.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="wink">
                             <div class="card-face front-face">
                                 <i class="far fa-kiss-wink-heart"></i>
-                                <img class="card-value" src="assets/images/link5.png">
+                                <img class="card-value" src="assets/images/link5.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tears">
                             <div class="card-face front-face">
                                 <i class="far fa-grin-squint-tears"></i>
-                                <img class="card-value" src="assets/images/link6.png">
+                                <img class="card-value" src="assets/images/link6.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tears">
                             <div class="card-face front-face">
                                 <i class="far fa-grin-squint-tears"></i>
-                                <img class="card-value" src="assets/images/link6.png">
+                                <img class="card-value" src="assets/images/link6.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="grimace">
                             <div class="card-face front-face">
                                 <i class="far fa-grimace"></i>
-                                <img class="card-value" src="assets/images/link7.png">
+                                <img class="card-value" src="assets/images/link7.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="grimace">
                             <div class="card-face front-face">
                                 <i class="far fa-grimace"></i>
-                                <img class="card-value" src="assets/images/link7.png">
+                                <img class="card-value" src="assets/images/link7.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="dizzy">
                             <div class="card-face front-face">
                                 <i class="far fa-dizzy"></i>
-                                <img class="card-value" src="assets/images/link8.png">
+                                <img class="card-value" src="assets/images/link8.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="dizzy">
                             <div class="card-face front-face">
                                 <i class="far fa-dizzy"></i>
-                                <img class="card-value" src="assets/images/link8.png">
+                                <img class="card-value" src="assets/images/link8.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tongue">
                             <div class="card-face front-face">
                                 <i class="far fa-grin-tongue"></i>
-                                <img class="card-value" src="assets/images/link9.png">
+                                <img class="card-value" src="assets/images/link9.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="tongue">
                             <div class="card-face front-face">
                                 <i class="far fa-grin-tongue"></i>
-                                <img class="card-value" src="assets/images/link9.png">
+                                <img class="card-value" src="assets/images/link9.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="meh">
                             <div class="card-face front-face">
                                 <i class="far fa-meh-blank"></i>
-                                <img class="card-value" src="assets/images/link10.png">
+                                <img class="card-value" src="assets/images/link10.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>
                         <div class="memory-card card" data-framework="meh">
                             <div class="card-face front-face">
                                 <i class="far fa-meh-blank"></i>
-                                <img class="card-value" src="assets/images/link10.png">
+                                <img class="card-value" src="assets/images/link10.png" alt="link">
                             </div>
                             <div class="card-face back-face"><i class="fas fa-dragon"></i></div>
                         </div>-->
-                    </section>
+                    </div>
                 </div>
             </div>
-<!-----------------------------------------------------Navigation Div-->
+<!--Navigation Div-->
         <div id="navigation">
             <div id="navigation-inner">
-<!-----------------------------------------------------Reset Button-->
+<!--Reset Button-->
                 <div class="nav-btn">
 <!--https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
                     <button id="reset-btn" onclick="window.location.reload();">Reset</button>
                 </div>
-<!-----------------------------------------------------Instructions Button-->
+<!--Instructions Button-->
                 <div class="nav-btn">
                     <button id="instructions-btn">Instructions</button>
                     <div id="instructionsModal" class="i-modal">
@@ -204,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-<!-----------------------------------------------------Difficulty Button-->
+<!--Difficulty Button-->
                 <div class="nav-btn">
                     <button id="difficulty-btn">Difficulty</button>
                     <div id="diffModal" class="d-modal">

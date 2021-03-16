@@ -26,8 +26,8 @@
 
 #### index.html
   * W3C HTML Validator - Document checking completed. No errors or warnings to show.
-  * Chrome Lighthouse - 99, 95, 93, 90.
-  * ![Lighthouse assessment](assets/lighthouse/lighthouse1.png)
+  * Chrome Lighthouse - 100, 100, 100, 89.
+  * ![Lighthouse assessment](assets/images/indexhtml.png)
 
 #### style.css
   * W3C CSS Validator - Congratulations! No error found.
