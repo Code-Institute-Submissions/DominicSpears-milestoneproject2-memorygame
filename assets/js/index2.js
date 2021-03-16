@@ -175,21 +175,23 @@ var btn = document.getElementById("instructions-btn");
 btn.onclick = function() {
   modal.style.display = "block";
   clearInterval(this.countDown);
-}
+};
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 /*-------------------------------------------Difficulty Modal*/
 var diffModal = document.getElementById("diffModal");
 var difficultyBtn = document.getElementById("difficulty-btn");
 difficultyBtn.onclick = function() {
   diffModal.style.display = "block";
-}
+};
 window.onclick = function(event) {
   if (event.target == diffModal) {
     diffModal.style.display = "none";
   }
-}
+};
+
+ticker
