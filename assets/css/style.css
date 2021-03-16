@@ -314,7 +314,7 @@ h4 {
   width: 100%; /* modal is full width of game only*/
   height: 100%; 
   overflow: auto;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,1);
   border-radius: 40px;
 }
 
