@@ -137,7 +137,14 @@ flip back to their original position.
 
 #### Navigation Buttons
 ##### Active
+* Reset button, resets the page to its original settings. 
+* Instructions button, reveals a modal with game instructions and a scrollbar on the sid eof the page.
+* Instructions button, return button resets the page to the start screen, beginning the countdown from the start. 
+* Difficulty button, opens new modal with three difficulty buttons.
 ##### To Do  
+* Reset button, reset the game without resetting other features e.g. the music.
+* Difficulty button, three difficulty buttons alter the game timer to increase/decrease difficulty.
+* Settings button, shows a new modal to provide user options e.g. music volume.
 
 #### Instructions Modal
 ##### Active
