@@ -314,7 +314,7 @@ h4 {
   width: 100%; /* modal is full width of game only*/
   height: 100%; 
   overflow: auto;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,0.1);
   border-radius: 40px;
 }
 
@@ -333,10 +333,13 @@ h4 {
     height: 30%;
 }
 
-.g-modal-content, 
-.v-modal-content {
+.g-modal-content {
     width: 80%;
     height: 20%;
+}
+
+.v-modal-content {
+    padding: 20px;
 }
 
 #start {
