@@ -325,16 +325,16 @@ h4 {
   color: rgb(0, 225, 255);
   border: 1px solid rgb(0, 225, 255);
   position: relative;
-  text-align: center;  
+  text-align: center; 
+  width: 80%;
+  padding: 20px; 
 }
 
 .st-modal-content {
-    width: 80%;
     height: 30%;
 }
 
 .g-modal-content {
-    width: 80%;
     height: 20%;
 }
 
@@ -360,8 +360,20 @@ h4 {
     cursor: pointer;
 }
 
-.new-game {
+.return {
     width: 100%;
+    height: 30%;
+    border-radius: 15px;
+    color: rgb(0, 225, 255);
+    background-color: black;
+    box-shadow: 0 0 15px rgb(0, 225, 255);
+    -moz-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
+    -o-box-shadow: 0 0 15px rgb(0, 225, 255);
+}
+
+.new-game {
+    width: 80%;
     height: 30%;
     border-radius: 15px;
     color: rgb(0, 225, 255);
