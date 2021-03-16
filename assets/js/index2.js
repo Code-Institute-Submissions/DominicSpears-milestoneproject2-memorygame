@@ -129,12 +129,17 @@ class MatchThePairs {
     }  
 }
 //scorecard on victory modal
-var x = myFunction(100, 3);
+var ticker = document.getElementById('flips');
+var totalClicks = this.ticker.innerText;
+var x = myFunction(100, totalClicks);
 document.getElementById("score").innerHTML = x;
 
 function myFunction(a, b) {
     return a - b;
 }
+
+
+
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
