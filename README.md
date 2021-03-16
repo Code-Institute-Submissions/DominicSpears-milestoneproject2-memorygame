@@ -21,7 +21,10 @@ ___
 <a name="intro"></a>
 ### Introduction
 
-
+This site is a memory game based on a classic card game. The game begins with a grid of hidden cards and the player can 
+reveal 2 cards at a time. If the image on the cards is a match, the cards will remain revealed. If the cards are mis-matched, 
+they will flip back over. By remembering the location of each image, the player can match each pair. The aim of the game is 
+to reveal the entire grid of cards.
 ___
 
 <a name="tech"></a>
@@ -33,9 +36,9 @@ Technologies used to create the site:
   * The project uses **HTML 5** to create the basic layout and site structure.
 * CSS
   * The project uses **CSS 3** to style the html to be aesthetically pleasing and responsive.
-* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) 
-  * The project uses **Bootstrap Version 4.5.2** to simplify the creation of site features, for example carousels and accordions. 
-* [Font Awesome](https://fontawesome.com/)
+* JavaScript
+  * The project uses **JavaScript** to provide an interactive experience and functionality.. 
+* [Font Awesome](https://fontawesome.com/) 
   * The project uses **Font Awesome Version 5.15.1** to add icons that aid aesthetics or provide social media links.
 * [Google Fonts](https://fonts.google.com/)
   * the project uses **google fonts** as a source for its extra fonts.
@@ -104,17 +107,53 @@ New to PC gaming / casual:
 ### Surface Plane
 * Dark background to minimize eye strain, means that game and fonts must be lighter.
 * Distinctive theme color (light blue), stands out from the background without being intrusive.
-* Typography - TBD
+* Title typography that is futuristic to match the clean design and bulk typography that is simple and easy to read.
 
 ___
 
 <a name="feat"></a>
 ### Features
 
-#### Header
+#### Start Modal
 ##### Active
-##### To Do ...etc
+* Click the start button to begin the game and start the timer.
+* Click outside of the modal content box to produce the same result. 
 
+#### Main Page
+##### Active
+* Countdown clock, begins counting down when the game begins and counts down in second incraments to zero at which the game ends.
+* Flip counter, increases by 1 each time the player clicks.  
+##### To Do 
+
+#### Game Grid
+##### Active
+* Each click flips a card, revealing the image on the reverse side.
+* Each card can only be flipped once and will only add 1 to the flip counter.
+* If the cards do not match, the cards will linger upright to provide time to memorise the image. The cards will then 
+flip back to their original position.
+* If the cards match, the cards will remain upright. They cannot be selected again.
+* Only two cards can be selected at one time.
+* During the flip back, all remaining cards lock and cannot be selected until the flip animation finishes. 
+
+#### Navigation Buttons
+##### Active
+##### To Do  
+
+#### Instructions Modal
+##### Active
+##### To Do 
+
+#### Difficulty Modal
+##### Active
+##### To Do 
+
+#### Victory Modal
+##### Active
+##### To Do 
+
+#### Game Over Modal
+##### Active
+##### To Do 
 
 <a name="test"></a>
 ### Testing
