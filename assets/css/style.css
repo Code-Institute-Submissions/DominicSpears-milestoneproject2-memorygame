@@ -1,4 +1,4 @@
-/* Credit: Code taken from https://www.w3schools.com/cssref/css3_pr_mediaquery.asp modified for use */ 
+/* Credit: Code taken from https://css-tricks.com/centering-css-complete-guide/ modified for use */ 
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Orbitron:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap');
 
 * {
@@ -23,6 +23,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+/* Credit: Code taken from https://css-tricks.com/forums/topic/how-to-add-shadows-on-all-4-sides-of-a-block-with-css/ modified for use */ 
     transform: translate(-50%, -50%);
     box-shadow: 0 0 50px rgb(0, 225, 255);
     -moz-box-shadow: 0 0 50px rgb(0, 225, 255);
@@ -97,9 +98,9 @@ h1 {
 }
 
 #grid-inner {
-    /*border: 2px solid blue;*/
     width: 100%;
     height: 90%;
+/* Credit: Code taken from https://css-tricks.com/centering-css-complete-guide/ modified for use */ 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -326,6 +327,7 @@ h4 {
   color: rgb(0, 225, 255);
   border: 1px solid rgb(0, 225, 255);
   position: relative;
+  /* Credit: Code taken from https://www.w3schools.com/cssref/pr_text_text-align.ASP modified for use */ 
   text-align: center; 
   width: 80%;
   padding: 20px; 

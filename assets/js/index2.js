@@ -79,6 +79,7 @@ class MatchThePairs {
      /* Credit: Code taken from https://www.w3schools.com/js/js_arrow_function.asp */ 
     cardMisMatch(card1, card2) {
         this.busy = true;
+/* Credit: Code taken from https://www.w3schools.com/jsref/met_win_settimeout.asp modified for use */
         setTimeout(() => {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
@@ -160,7 +161,7 @@ if(document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
     ready();
-}
+} 
 /* Credit: Code taken from https://www.w3schools.com/howto/howto_css_modals.asp modified for use */ 
 /*-------------------------------------------Instructions Modal*/
 var modal = document.getElementById("instructionsModal");
