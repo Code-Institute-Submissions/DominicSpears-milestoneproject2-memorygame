@@ -1,3 +1,4 @@
+/* Credit: Code taken from https://www.youtube.com/watch?v=3uuQ3g92oPQ */ 
 // audio controller for background music
 class AudioController {
     constructor() {
