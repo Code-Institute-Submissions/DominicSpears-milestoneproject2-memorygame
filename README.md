@@ -210,7 +210,25 @@ ___
 ### Credits
 
 #### Code
+* Set timeout for function that delays access to game grid at start of game. [w3schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) 
+
+* Centralise game grid div. [css-tricks](https://css-tricks.com/centering-css-complete-guide/) 
+
+* Align text of the victory modal centrally. [w3schools](https://www.w3schools.com/cssref/pr_text_text-align.ASP) 
+
+* Create a box shaddow around all sides of a div. [stackoverflow](https://stackoverflow.com/questions/5608222/how-to-apply-box-shadow-on-all-four-sides) 
+
+* Create a box shaddow around all sides of a div. [css-tricks](https://css-tricks.com/forums/topic/how-to-add-shadows-on-all-4-sides-of-a-block-with-css/) 
+
 * Description [Link](Website) 
+
+* Description [Link](Website) 
+
+* Description [Link](Website) 
+
+* Description [Link](Website) 
+
+
 
 
 #### Media
