@@ -220,7 +220,21 @@ ___
 
 * Create a box shaddow around all sides of a div. [css-tricks](https://css-tricks.com/forums/topic/how-to-add-shadows-on-all-4-sides-of-a-block-with-css/) 
 
-* Description [Link](Website) 
+* Create a css modal with javascript functinality. [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) 
+
+* Changing the display property of a specific div. [Link](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
+
+* Call a function for each card in the array, hide cards. [w3schools](https://www.w3schools.com/jsref/jsref_foreach.asp) 
+
+* Using the arrow shorthand for function. [w3schools](https://www.w3schools.com/js/js_arrow_function.asp) 
+
+* Reminder of how to use media rules [w3schools](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp) 
+
+* Setting text transform to uppercase for the start modal. [w3schools](https://www.w3schools.com/cssref/pr_text_text-transform.asp) 
+
+* Customising a scrollbar to fit my aesthetics. [w3schools](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp) 
+
+* Setting a function with multiple perameters. [w3schools](https://www.w3schools.com/js/js_functions.asp) 
 
 * Description [Link](Website) 
 
