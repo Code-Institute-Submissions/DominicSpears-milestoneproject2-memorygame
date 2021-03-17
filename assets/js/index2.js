@@ -42,11 +42,14 @@ class MatchThePairs {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
-//flip back the cards
-    hideCards() {
-        this.cardsArray.forEach(card => {
-            card.classList.remove('visible');
-        }); 
+    /* Credit: Code taken from https://bost.ocks.org/mike/shuffle/ modified for use */ 
+    //shuffle function, fisher yates function
+    shuffleCards() {
+        for(let i = this.cardsArray.length - 1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i+1));
+            this.cardsArray[randIndex].style.order = i;
+            this.cardsArray[i].style.order = randIndex;
+        }
     }
 //flip card function
     flipCard(card) {
@@ -61,6 +64,12 @@ class MatchThePairs {
             else
                 this.cardToCheck = card;
         }
+    }
+    //flip back the cards
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+        }); 
     }
 //check for card match    
     checkForCardMatch(card) {
@@ -102,7 +111,10 @@ class MatchThePairs {
                 this.gameOver();
         }, 1000);
     }
-
+//check "if card if ok to flip" boolean  
+    canFlipCard(card) {
+        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
+    }
     //gameover function
     gameOver() {
         clearInterval(this.countDown);
@@ -112,20 +124,7 @@ class MatchThePairs {
     victory() {
         clearInterval(this.countDown);
         document.getElementById('victoryModal').classList.add('visible');
-    }    
-    /* Credit: Code taken from https://bost.ocks.org/mike/shuffle/ modified for use */ 
-    //shuffle function, fisher yates function
-    shuffleCards() {
-        for(let i = this.cardsArray.length - 1; i > 0; i--) {
-            let randIndex = Math.floor(Math.random() * (i+1));
-            this.cardsArray[randIndex].style.order = i;
-            this.cardsArray[i].style.order = randIndex;
-        }
-    }
-//check "if card if ok to flip" boolean  
-    canFlipCard(card) {
-        return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
-    }  
+    }      
 }
 //scorecard on victory modal
 var ticker = document.getElementById('flips');
