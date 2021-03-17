@@ -222,7 +222,7 @@ ___
 
 * Create a css modal with javascript functinality. [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) 
 
-* Changing the display property of a specific div. [Link](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
+* Changing the display property of a specific div. [mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
 
 * Call a function for each card in the array, hide cards. [w3schools](https://www.w3schools.com/jsref/jsref_foreach.asp) 
 
@@ -236,7 +236,7 @@ ___
 
 * Setting a function with multiple perameters. [w3schools](https://www.w3schools.com/js/js_functions.asp) 
 
-* Description [Link](Website) 
+* Shuffle cards using fisher-yates shuffle. [bost](https://bost.ocks.org/mike/shuffle/) 
 
 * Description [Link](Website) 
 

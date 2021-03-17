@@ -8,16 +8,6 @@ class AudioController {
     startMusic() {
         this.bgMusic.play();
     }
-    stopMusic() {
-        this.bgMusic.pause();
-        this.bgMusic.currentTime = 0;
-    }
-    victory() {
-        this.stopMusic();
-    }
-    gameOver() {
-        this.stopMusic();
-    }
 }
 //game class
 class MatchThePairs {
@@ -85,6 +75,8 @@ class MatchThePairs {
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory(); 
     }
+     /* Credit: Code taken from https://www.w3schools.com/js/js_functions.asp */ 
+     /* Credit: Code taken from https://www.w3schools.com/js/js_arrow_function.asp */ 
     cardMisMatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -107,14 +99,13 @@ class MatchThePairs {
     }
     gameOver() {
         clearInterval(this.countDown);
-        /*this.audioController.gameOver();*/
         document.getElementById('gameoverModal').classList.add('visible');
-    }
+    } 
     victory() {
         clearInterval(this.countDown);
-        /*this.audioController.victory();*/
         document.getElementById('victoryModal').classList.add('visible');
     }    
+    /* Credit: Code taken from https://bost.ocks.org/mike/shuffle/ modified for use */ 
     //shuffle function, fisher yates function
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
@@ -147,6 +138,8 @@ function ready() {
 //set game duration by altering number here    
     let game = new MatchThePairs(60, cards);
 
+/* Credit: Code taken from https://www.w3schools.com/jsref/jsref_foreach.asp modified for use */ 
+/* Credit: Code taken from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList modified for use */ 
 //each time you click on an overlay
     overlays.forEach(overlay => {
         overlay.addEventListener("click", () => {
@@ -168,7 +161,7 @@ if(document.readyState === "loading") {
 } else {
     ready();
 }
-
+/* Credit: Code taken from https://www.w3schools.com/howto/howto_css_modals.asp modified for use */ 
 /*-------------------------------------------Instructions Modal*/
 var modal = document.getElementById("instructionsModal");
 var btn = document.getElementById("instructions-btn");
