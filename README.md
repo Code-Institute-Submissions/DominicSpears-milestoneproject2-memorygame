@@ -180,7 +180,7 @@ ___
 #### To deploy to gihub pages:
 
 1. Login to github
-2. Select DominicSpears/MilestoneProject1-Gen5
+2. Select DominicSpears/milestoneproject2-memorygame
 3. Select the settings tab
 4. Scroll down to gihub pages section
 5. Under source, select Master branch
@@ -241,9 +241,6 @@ ___
 * Description [Link](Website) 
 
 * Description [Link](Website) 
-
-
-
 
 #### Media
 ##### Images
