@@ -10,7 +10,7 @@ class AudioController {
         this.bgMusic.play();
     }
 }
-//game class
+//Full game class
 class MatchThePairs {
     constructor(totalTime, cards) {
         this.cardsArray = cards;
@@ -30,6 +30,7 @@ class MatchThePairs {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+/* Credit: Code taken from https://www.w3schools.com/jsref/met_win_settimeout.asp modified for use */
     //wait 500ms before function
     setTimeout(() => {
             this.audioController.startMusic();
@@ -41,11 +42,13 @@ class MatchThePairs {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+//flip back the cards
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
         }); 
     }
+//flip card function
     flipCard(card) {
         if(this.canFlipCard(card)) {
             //count flips as clicked
@@ -59,6 +62,7 @@ class MatchThePairs {
                 this.cardToCheck = card;
         }
     }
+//check for card match    
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -67,20 +71,18 @@ class MatchThePairs {
 
         this.cardToCheck = null;
     }
+//length of game function
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
-        /*card1.classList.add('matched');
-        card2.classList.add('matched');
-        this.audioController.match();*/
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory(); 
     }
+//flip back function if mis-matched
      /* Credit: Code taken from https://www.w3schools.com/js/js_functions.asp */ 
      /* Credit: Code taken from https://www.w3schools.com/js/js_arrow_function.asp */ 
     cardMisMatch(card1, card2) {
         this.busy = true;
-/* Credit: Code taken from https://www.w3schools.com/jsref/met_win_settimeout.asp modified for use */
         setTimeout(() => {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
@@ -91,6 +93,7 @@ class MatchThePairs {
     getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
     }
+    //sets countdown until gameover
     startCountDown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -99,10 +102,13 @@ class MatchThePairs {
                 this.gameOver();
         }, 1000);
     }
+
+    //gameover function
     gameOver() {
         clearInterval(this.countDown);
         document.getElementById('gameoverModal').classList.add('visible');
     } 
+    //win function
     victory() {
         clearInterval(this.countDown);
         document.getElementById('victoryModal').classList.add('visible');
@@ -131,8 +137,6 @@ function myFunction(a, b) {
     return a - b;
 }
 
-
-
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
@@ -149,7 +153,7 @@ function ready() {
             game.startGame();  
         });
     });
-
+//flipcard on click function
     cards.forEach(card => {
         card.addEventListener("click", () => {
             game.flipCard(card);
@@ -188,5 +192,3 @@ window.onclick = function(event) {
     diffModal.style.display = "none";
   }
 };
-
-ticker
