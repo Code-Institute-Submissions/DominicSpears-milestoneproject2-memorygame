@@ -10,6 +10,7 @@ class AudioController {
         this.bgMusic.play();
     }
 }
+let duration = 80;
 /* Credit: Code inspired by https://www.youtube.com/watch?v=3uuQ3g92oPQ */
 //Full game class
 class MatchThePairs {
@@ -136,14 +137,12 @@ class MatchThePairs {
         }
     }      
 }
-
-
 //make arrays from individual overlays and cards
 function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
 //set game duration by altering number here    
-    let game = new MatchThePairs(80, cards);
+    let game = new MatchThePairs(duration, cards);
 
 /* Credit: Code taken from https://www.w3schools.com/jsref/jsref_foreach.asp modified for use */ 
 /* Credit: Code taken from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList modified for use */ 
