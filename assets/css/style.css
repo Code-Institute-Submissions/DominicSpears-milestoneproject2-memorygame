@@ -550,10 +550,12 @@ h4 {
         height: 30%;
     }
 
-    .g-modal-content, 
+    .g-modal-content {
+        height: 60%;
+    }
     .v-modal-content {
         width: 90%;
-        height: 20%;
+        height: 80%;
     }
 
     .new-game {
