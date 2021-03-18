@@ -2,10 +2,52 @@
 
 #### Solved Bugs
 
-1. Navbar link alignment
-  * The navbar links would automatically align on the left of the screen next to the logo. 
-  * To solve this I applied justify-content: flex-end, allowing the links to hug the right side of the screen
-  * Code from [W3Schools.com](https://www.w3schools.com/cssref/css3_pr_justify-content.asp)
+1. Time remaining
+  * The time remaining would temporarily show the incorrect figure before starting the countdown. 
+  * To solve this I altered the initial value in the html code to the start timer value.
+
+2. Card matching
+  * matching cards would not register the match and so flip back 
+  * To solve this I added an image to the front-face div and used the image src to match the cards.
+  * Code from [youtube](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+
+3. Image visability
+  * The newly added images would appear on the game grid, affecting the spacing. 
+  * To solve this I added a class to each image and set the display to none.
+
+4. Navigation buttons
+  * The buttons would align at the top of the navigation div instead of spacing evenly.  
+  * To solve this I gave each button its own div and each div a percentage of the navbar height
+  * Code from [mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
+
+5. Instruction modal
+  * The content would only start in the center and require extra scrolling to see all the information.
+  * To solve this I increased the height of the i-modal-content.
+
+6. Instructions modal background
+  * If taking too long, the game over modal would appear while reading the instructions. 
+  * To solve this I increased the z-value of the i-modal to 2. 
+  * Code from [w3schools](https://www.w3schools.com/cssref/pr_pos_z-index.asp)
+
+7. Early game over
+  * When closing the instructions the game over modal would be visible, if taking a long time. 
+  * To solve this I altered the function of the return button, making it restart the page rather than close the modal.
+  * Code from [stackoverflow](https://stackoverflow.com/questions/3715047/how-to-reload-a-page-using-javascript)
+
+8. Score
+  * The score required the final flip count as a variable but was accepting the initial flip count(0). 
+  * To solve this I moved the score function inside the victory function.
+  * Assisted with mentor guidence.
+
+9. Navbar link alignment
+  * Problem 
+  * To solve this I
+  * Code from []()
+
+10. Navbar link alignment
+  * Problem 
+  * To solve this I
+  * Code from []()
 
 #### Remaining Bugs
 

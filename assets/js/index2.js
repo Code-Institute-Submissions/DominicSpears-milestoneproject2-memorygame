@@ -10,6 +10,7 @@ class AudioController {
         this.bgMusic.play();
     }
 }
+/* Credit: Code inspired by https://www.youtube.com/watch?v=3uuQ3g92oPQ */
 //Full game class
 class MatchThePairs {
     constructor(totalTime, cards) {
