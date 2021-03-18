@@ -4,7 +4,7 @@ Welcome to Flash, . Made for my Code Institute Milestone Project 2.
 
 Follow the link to [Match the Pairs!]()
 
-![Image]()
+![Image](assets/wireframes/air2.png)
 
 ### Contents
 
