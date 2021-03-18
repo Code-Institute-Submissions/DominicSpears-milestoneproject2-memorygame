@@ -2,7 +2,7 @@
 
 Welcome to Flash, . Made for my Code Institute Milestone Project 2.
 
-Follow the link to [Match the Pairs!]()
+Follow the link to [Match the Pairs!](https://dominicspears.github.io/milestoneproject2-memorygame/)
 
 ![Image](assets/wireframes/air2.png)
 
