@@ -191,7 +191,7 @@
 
 ### Jasmine Test
 
-[Spec](assets/jasmine/jasmine1.png)
+  * ![Javascript Spec File](assets/jasmine/jasmine1.png)
 
 [Script](assets/jasmine/jasmine2.png)
 
