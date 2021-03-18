@@ -62,11 +62,6 @@
   * The game would eng too soon with the additional cards I had entered. 
   * To solve this I increased the numerical perameter in the new matched game function. 
 
-14. Navbar link alignment
-  * Problem 
-  * To solve this I
-  * Code from []()
-
 #### Remaining Bugs
 
 1. Audio restart

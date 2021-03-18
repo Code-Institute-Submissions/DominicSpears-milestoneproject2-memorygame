@@ -24,7 +24,7 @@
             </div>
             <div id="highscore">
                 <p>Time Remaining:</p>
-                <p id="time-remaining">80</p>
+                <p id="time-remaining">40</p>
             </div>
             <div id="objectives">
                 <p>Cards Flipped:</p>
@@ -212,7 +212,7 @@
                     <div id="diffModal" class="d-modal">
                         <div class="d-modal-content">
                             <p>Choose your difficulty!</p>
-                            <button class="modal-diff-btn" id="easy">Easy</button>
+                            <button class="modal-diff-btn" id="easy" onclick="easy()">Easy</button>
                             <button class="modal-diff-btn" id="medium">Medium</button>
                             <button class="modal-diff-btn" id="hard">Hard</button>
                         </div>
@@ -229,6 +229,7 @@
     <div id="gameoverModal" class="g-modal overlay-text">
         <div class="g-modal-content">
             <h4>Game Over</h4>
+            <p>You ran out of time...because you suck!</p>
             <button class="new-game">New Game</button>
         </div>
     </div>
@@ -237,8 +238,8 @@
             <h4>Congratulations!</h4>
             <p>You have completed the game. You are awesome!</p>
             <p>Your final score is:</p>
-            <p>100 - <span id="flip-score">(total flips)</span> x difficulty level</p>
             <p id="score">SCORE!</p>
+            <p>100 - <span id="flip-score">(total flips)</span></p>
             <button class="new-game">New Game</button>
         </div>
     </div>
