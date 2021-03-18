@@ -74,7 +74,7 @@
   * Closes start modal and begins countdown timer
   * Result: pass
 
-2. Start gmae modal
+2. Start game modal
   * Click outside of modal  
   * Closes modal and begins countdown timer 
   * Result: pass
