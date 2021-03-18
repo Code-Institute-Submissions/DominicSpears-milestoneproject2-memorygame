@@ -14,13 +14,126 @@
 
 ### Manual Testing
 
-1. Internal link (Logo)
-  * Click the Gen5 logo 
-  * Returns the user to the homepage
+1. Start Game
+  *Click start game on screen
+  * Closes start modal and begins countdown timer
   * Result: pass
 
+2. Start gmae modal
+  * Click outside of modal  
+  * Closes modal and begins countdown timer 
+  * Result: pass
 
+3. Countdown Timer
+  * Player starts the game
+  * Counts down in incraments of 1 second
+  * Result: pass
+
+4. Flip counter
+  * Player clicks a card 
+  * Adds 1 to the flip counter 
+  * Result: pass
+
+5. Flipped card cannot be counted again
+  * Click on already flipped card 
+  * Nothing added to flip counter 
+  * Result: pass
+
+6. Card flip
+  * Click on facedown card 
+  * Card flips 180 degrees, 3d animation
+  * Result: pass
+
+7. Card match
+  * Click two identical cards 
+  * Both cards remain face up 
+  * Result: pass
   
+8. Card match lock
+  * Click two identical cards after matching
+  * Clicking each card will not add to the flip total
+  * Result: pass
+
+9. Card mis match linger
+  * Click two cards with different faces  
+  * Both cards will linger for a short time before the flip back 
+  * Result: pass
+
+10. Card mis match
+  * Click two cards with different faces 
+  * Both cards will flip back (after lingering)
+  * Result: pass
+
+11. game grid lock
+  * Click two cards with different faces  
+  * No more cards can be clicked until flip animation is complete
+  * Result: pass
+
+12. Win the game
+  * Match all pairs on the grid before timer runs out
+  * Victory modal reveals
+  * Result: pass
+
+13. Victory modal, new game button
+  * Click new game
+  * Cards reshuffle and timer begins again and 
+  * Result: pass
+
+14. Victory modal, outside of modal
+  * Click outside of victory modal
+  * Cards reshuffle and timer begins again and 
+  * Result: pass
+
+15. Victory modal, score
+  * Click (flip) cards and win the game
+  * Score created based on number of clicks (flips)
+  * Result: pass
+
+16. Lose the game
+  * Timer runs out before grid completion
+  * Game over modal reveals
+  * Result: pass
+
+17. Game over modal, new game button
+  * Click new game
+  * Cards reshuffle and timer begins again and 
+  * Result: pass
+
+18. Game over modal, outside of modal
+  * Click outside of game over modal
+  * Cards reshuffle and timer begins again and 
+  * Result: pass
+
+19. Reset button
+  * Click reset button
+  * Restart the page/game
+  * Result: pass
+
+20. Instructions button
+  * Click instructions button
+  * Reveal instructions modal
+  * Result: pass
+
+21. Instrutions scrollbar
+  * Click and drag scrollbar
+  * Move the page and reveal more information
+  * Result: pass
+
+22. Instrutions return button
+  * Click return
+  * Resets the game from the start modal
+  * Result: pass
+
+23. Difficulty button
+  * Click difficulty button
+  * Reveal difficulty modal
+  * Result: pass
+
+24. Difficulty modal
+  * Click outside of modal
+  * Closes the modal
+  * Result: pass
+
 
 ### Validator Tests
 

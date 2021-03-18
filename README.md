@@ -159,8 +159,8 @@ flip back to their original position.
 ##### Active
 * New game button closes the modal and restarts the countdown timer.
 * Clicking outside the modal produces the same result.
-##### To Do 
 * Score produced by taking total flips from a set number(100). Fewer flips means higher final score.
+##### To Do 
 * Score multiplier based on difficulty, dependent on adding dificulty levels.
 
 #### Game Over Modal

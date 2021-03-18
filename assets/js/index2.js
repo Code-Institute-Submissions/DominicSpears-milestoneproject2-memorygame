@@ -125,14 +125,14 @@ class MatchThePairs {
         clearInterval(this.countDown);
         document.getElementById('victoryModal').classList.add('visible');
         //scorecard on victory modal
-var ticker = document.getElementById('flips');
-var totalClicks = this.ticker.innerText;
-var x = myFunction(100, totalClicks);
-document.getElementById("score").innerHTML = x;
+        var ticker = document.getElementById('flips');
+        var totalClicks = this.ticker.innerText;
+        var x = myFunction(100, totalClicks);
+        document.getElementById("score").innerHTML = x;
 
-function myFunction(a, b) {
-    return a - b;
-}
+        function myFunction(a, b) {
+            return a - b;
+        }
     }      
 }
 
