@@ -164,11 +164,11 @@ Experienced with PC Gaming
   * ![User Story 3](assets/userstory/us2.png)
 
 4. As an experianced gamer, I want replay value via a scoring system...
-  * To address this I wanted to add a scoring system on the final victory modal.
+  * To address this I added a scoring system on the final victory modal.
   * ![User Story 4](assets/userstory/us4.png)
 
 5. As an experianced gamer, I want a score breakdown so they can understand how to get a higher score.
-  * To address this I wanted to add details of the scoring system on the final victory modal. 
+  * To address this I added details of the scoring system on the final victory modal. 
   * ![User Story 1](assets/userstory/us4.png)
 
 New to PC gaming / casual

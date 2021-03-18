@@ -142,7 +142,7 @@ function ready() {
     let overlays = Array.from(document.getElementsByClassName("overlay-text"));
     let cards = Array.from(document.getElementsByClassName("card"));
 //set game duration by altering number here    
-    let game = new MatchThePairs(60, cards);
+    let game = new MatchThePairs(80, cards);
 
 /* Credit: Code taken from https://www.w3schools.com/jsref/jsref_foreach.asp modified for use */ 
 /* Credit: Code taken from https://developer.mozilla.org/en-US/docs/Web/API/Element/classList modified for use */ 
