@@ -238,10 +238,6 @@ ___
 
 * Shuffle cards using fisher-yates shuffle. [bost](https://bost.ocks.org/mike/shuffle/) 
 
-* Description [Link](Website) 
-
-* Description [Link](Website) 
-
 #### Media
 ##### Images
 * All images  were located via bing images, searched under "free to share and use" licences.
