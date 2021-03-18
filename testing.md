@@ -189,6 +189,13 @@
   * Closes the modal
   * Result: pass
 
+### Jasmine Test
+
+[Spec](assets/jasmine/jasmine1.png)
+
+[Script](assets/jasmine/jasmine2.png)
+
+[Result](assets/jasmine/jasmine3.png)
 
 ### Validator Tests
 
