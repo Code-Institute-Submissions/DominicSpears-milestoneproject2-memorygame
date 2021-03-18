@@ -39,20 +39,38 @@
   * To solve this I moved the score function inside the victory function.
   * Assisted with mentor guidence.
 
-9. Navbar link alignment
-  * Problem 
-  * To solve this I
-  * Code from []()
+9. Centralise memory game
+  * The game would appear in the corner of the screen rather than centrally. 
+  * To solve this I made the body position: relative and memory game div position:absolute, top: 50%, left: 50% and transform: translate(-50%, -50%).
+  * Code from [css-tricks](https://css-tricks.com/centering-css-complete-guide/)
 
-10. Navbar link alignment
+10. Game complete
+  * All cards would flip but the victory modal would not appear. 
+  * To solve this I added an if statement that if the nuber of matched cards equaled the length of the card array, the voctory function would run.
+  * Code from [youtube](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
+
+11. Card flip back
+  * Mis matched cards would linger for too long before flipping back. 
+  * To solve this I lowered the set timout to 700ms.
+
+12. Countdown timer
+  * The timer would continue to countdown after the game was completed. 
+  * To solve this I added a clear interval to the victory and game over functions.
+  * Code from [w3schools](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+
+13. Game duration
+  * The game would eng too soon with the additional cards I had entered. 
+  * To solve this I increased the numerical perameter in the new matched game function. 
+
+14. Navbar link alignment
   * Problem 
   * To solve this I
   * Code from []()
 
 #### Remaining Bugs
 
-1. Video link Layout
-  * The youtube videos leave a large space underneith before the footer. This is particularly evident on larger screens. 
+1. Audio restart
+  * The background music restarts when the (instruction modal) return button is clicked. It would be better for the music to continue over multiple games. 
 
 ### Manual Testing
 

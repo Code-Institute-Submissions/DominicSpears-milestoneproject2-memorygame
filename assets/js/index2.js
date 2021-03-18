@@ -97,7 +97,7 @@ class MatchThePairs {
             card1.classList.remove('visible');
             card2.classList.remove('visible');
             this.busy = false;
-        }, 600);
+        }, 700);
     }
     //identify card by source
     getCardType(card) {
@@ -161,7 +161,7 @@ function ready() {
         });
     });
 }
-
+/* Credit: Code taken from https://www.youtube.com/watch?v=3uuQ3g92oPQ */ 
 //make sure page is loaded before javascript runs
 if(document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready());

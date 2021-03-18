@@ -23,8 +23,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-/* Credit: Code taken from https://css-tricks.com/forums/topic/how-to-add-shadows-on-all-4-sides-of-a-block-with-css/ modified for use */ 
     transform: translate(-50%, -50%);
+/* Credit: Code taken from https://css-tricks.com/forums/topic/how-to-add-shadows-on-all-4-sides-of-a-block-with-css/ modified for use */ 
     box-shadow: 0 0 50px rgb(0, 225, 255);
     -moz-box-shadow: 0 0 50px rgb(0, 225, 255);
     -webkit-box-shadow: 0 0 50px rgb(0, 225, 255);
