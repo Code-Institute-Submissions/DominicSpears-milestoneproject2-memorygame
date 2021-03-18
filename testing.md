@@ -190,12 +190,14 @@
   * Result: pass
 
 ### Jasmine Test
-
+  * Javascript Spec File
   * ![Javascript Spec File](assets/jasmine/jasmine1.png)
 
-[Script](assets/jasmine/jasmine2.png)
+  * Javascript Script File
+  * ![Javascript Script File](assets/jasmine/jasmine2.png)
 
-[Result](assets/jasmine/jasmine3.png)
+  * Jasmine Results
+  * ![Jasmine results](assets/jasmine/jasmine3.png)
 
 ### Validator Tests
 
