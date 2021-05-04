@@ -3,13 +3,14 @@
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('assets/music/background.mp3');
-        this.bgMusic.volume = 0.10;
+        this.bgMusic.volume = 0.30;
         this.bgMusic.loop = true;
     }
     startMusic() {
         this.bgMusic.play();
     }
 }
+
 let duration = 100;
 /* Credit: Code inspired by https://www.youtube.com/watch?v=3uuQ3g92oPQ */
 //Full game class
