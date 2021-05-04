@@ -243,7 +243,7 @@ img {
     -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
     -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
-/*-------------------------------------------Instructions/difficulty Modal*/
+/*-------------------------------------------Instructions Modal*/
 .i-modal {
   display: none;
   position: fixed;
@@ -334,6 +334,13 @@ h4 {
 
 #score {
     font-size: 40px;
+}
+
+.table, th, td {
+    font-size: 5px;
+    border: solid 1px rgb(0, 225, 255);
+    border-collapse: collapse;
+    color: rgb(0, 155, 175);
 }
 
 #start {

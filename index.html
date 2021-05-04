@@ -202,7 +202,7 @@
                                 a harder difficulty will lower the time limit. Only true masters of the game can complete the hardest difficulty.</p>
                             <h4>Reset</h4>
                                 <p>If at any stage you want to restart the game and begin again, click the reset button in the navigation menu.</p>   
-                            <button class="return" onclick="window.location.reload();">Return</button>
+                            <button class="return" onclick="window.location.reload();">Restart Game</button>
                         </div>
                     </div>
                 </div>
@@ -226,8 +226,38 @@
             <h4>Congratulations!</h4>
             <p>You have completed the game. You are awesome!</p>
             <p>Your final score is:</p>
+            <p>100 - <span id="flip-score">(total flips) =</span></p>
             <p id="score">SCORE!</p>
-            <p>100 - <span id="flip-score">(total flips)</span></p>
+            <table class="table">
+                <tr>
+                    <th>Score</th>
+                    <th>Skill Level</th> 
+                </tr>
+                <tr>
+                    <td>80</td>
+                    <td>Perfect score - you are a legend!</td>
+                </tr>
+                <tr>
+                    <td>70-79</td>
+                    <td>Memory Master - few reach these heights of success</td>
+                </tr>
+                <tr>
+                    <td>60-69</td>
+                    <td>Adept - a great score by a great player</td>
+                </tr>
+                <tr>
+                    <td>50-59</td>
+                    <td>Good - getting the hang of it.</td>
+                </tr>
+                <tr>
+                    <td>25-49</td>
+                    <td>OK - deffinitely needs improvement.</td>
+                </tr>
+                <tr>
+                    <td>0-24</td>
+                    <td>Beginner - nowhere to go but up.</td>
+                </tr>
+            </table>
             <button class="new-game">New Game</button>
         </div>
     </div>
