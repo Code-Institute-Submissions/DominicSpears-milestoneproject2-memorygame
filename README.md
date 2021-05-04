@@ -67,7 +67,6 @@ Experienced with PC Gaming
 
 * In depth instructions to explain game mechanics.
 * Gameplay that is easy to learn but difficult to master.
-* Increases difficult levels to test progression.
 * Replay value via a scoring system...
 * Or a rating based on the last performance.
 * A score breakdown so they can understand how to get a higher score.
@@ -75,7 +74,6 @@ Experienced with PC Gaming
 New to PC gaming / casual
 * Basic / fundamental instructions. 
 * Visually striking and memorable
-* An easy level to help get players started.
 * An ending screen/modal to congratulate the player upon completion.
 
 ### Structure Plane
@@ -86,15 +84,14 @@ Experienced with PC gaming:
 
 1. As an experienced gamer, I want to understand the game thoroughly by reading a comprehensive set of instructions.
 2. As an experienced gamer, I want to know my final score/performance level and how my score / performance could be improved.
-3. As an experienced gamer, I want a challenge and an experience which is difficult to master.
+3. As an experienced gamer, I want an experience which is difficult to master.
 4. As an experienced gamer, I want the game to be easy to view over extended playthroughs, without causing eye strain.
 
 New to PC gaming / casual: 
 
 1. As a new gamer, I want instructions that are simple to follow and a game concept that I can understand easily.
-2. As a new gamer, I want an easy level to solidify my understanding before being tested further.
-3. As a new gamer, I want a congratulations screen when completing the game to provide a sense of accomplishment.
-4. As a new gamer, I want the game to be visually appealing and memorable. 
+2. As a new gamer, I want a congratulations screen when completing the game to provide a sense of accomplishment.
+3. As a new gamer, I want the game to be visually appealing and memorable. 
 
 ### Skeleton Plane
 
@@ -140,7 +137,6 @@ flip back to their original position.
 ##### Active
 * Reset button, resets the page to its original settings. 
 * Instructions button, reveals a modal with game instructions 
-* Difficulty button, opens new modal with three difficulty buttons.
 ##### To Do  
 * Reset button, reset the game without resetting the whole page and therefore other features e.g. the music.
 * Settings button, shows a new modal to provide user options e.g. music volume.
@@ -150,18 +146,11 @@ flip back to their original position.
 * Srollbar on the side of the page.
 * Return button resets the page to the starting screen, beginning the countdown again.  
 
-#### Difficulty Modal
-* Click outside of the modal content to close. 
-##### To Do 
-* Difficulty button, three difficulty buttons alter the game timer to increase/decrease difficulty.
-
 #### Victory Modal
 ##### Active
 * New game button closes the modal and restarts the countdown timer.
 * Clicking outside the modal produces the same result.
 * Score produced by taking total flips from a set number(100). Fewer flips means higher final score.
-##### To Do 
-* Score multiplier based on difficulty, dependent on adding dificulty levels.
 
 #### Game Over Modal
 ##### Active

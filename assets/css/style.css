@@ -229,8 +229,7 @@ img {
 }
 
 #reset-btn,
-#instructions-btn,
-#difficulty-btn {
+#instructions-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -245,8 +244,7 @@ img {
     -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
 /*-------------------------------------------Instructions/difficulty Modal*/
-.i-modal, 
-.d-modal {
+.i-modal {
   display: none;
   position: fixed;
   z-index: 2;
@@ -260,8 +258,7 @@ img {
   border-radius: 40px;
 }
 
-.i-modal-content, 
-.d-modal-content {
+.i-modal-content {
   background-color: rgb(25, 25, 25);
   color: rgb(0, 225, 255);
   margin: 10% auto; 
@@ -289,20 +286,6 @@ h4 {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 225, 255); 
-}
-
-/*-------------------------------------------Difficulty Modal*/
-.modal-diff-btn {
-    width: 25%;
-    height: 50%;
-    border-radius: 15px;
-    margin: 0px 20px;
-    color: rgb(0, 225, 255);
-    background-color: black;
-    box-shadow: 0 0 15px rgb(0, 225, 255);
-    -moz-box-shadow: 0 0 15px rgb(0, 225, 255);
-    -webkit-box-shadow: 0 0 15px rgb(0, 225, 255);
-    -o-box-shadow: 0 0 15px rgb(0, 225, 255);
 }
 
 /*-------------------------------------------Start/gameover/victory modal*/
@@ -532,14 +515,12 @@ h4 {
         font-size: 20px;
     }
 
-    .i-modal-content, 
-    .d-modal-content {
+    .i-modal-content {
         font-size: 15px;
     }
 
     #reset-btn,
-    #instructions-btn,
-    #difficulty-btn {
+    #instructions-btn {
         width: 100%;
         height: 80%;
         font-size: 15px;
