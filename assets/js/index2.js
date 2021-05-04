@@ -180,3 +180,16 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+/*-------------------------------------------About Modal*/
+let aboutModal = document.getElementById("aboutModal");
+let aboutBtn = document.getElementById("about-btn");
+aboutBtn.onclick = function() {
+  aboutModal.style.display = "block";
+  clearInterval(this.countDown);
+};
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
