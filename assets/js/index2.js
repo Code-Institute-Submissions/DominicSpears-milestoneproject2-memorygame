@@ -127,9 +127,9 @@ class MatchThePairs {
         clearInterval(this.countDown);
         document.getElementById('victoryModal').classList.add('visible');
         //scorecard on victory modal
-        var ticker = document.getElementById('flips');
-        var totalClicks = this.ticker.innerText;
-        var x = myFunction(100, totalClicks);
+        let ticker = document.getElementById('flips');
+        let totalClicks = this.ticker.innerText;
+        let x = myFunction(100, totalClicks);
         document.getElementById("score").innerHTML = x;
 
         function myFunction(a, b) {
@@ -169,8 +169,8 @@ if(document.readyState === "loading") {
 } 
 /* Credit: Code taken from https://www.w3schools.com/howto/howto_css_modals.asp modified for use */ 
 /*-------------------------------------------Instructions Modal*/
-var modal = document.getElementById("instructionsModal");
-var btn = document.getElementById("instructions-btn");
+let modal = document.getElementById("instructionsModal");
+let btn = document.getElementById("instructions-btn");
 btn.onclick = function() {
   modal.style.display = "block";
   clearInterval(this.countDown);
