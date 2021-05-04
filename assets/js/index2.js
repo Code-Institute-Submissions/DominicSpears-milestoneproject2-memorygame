@@ -3,14 +3,14 @@
 class AudioController {
     constructor() {
         this.bgMusic = new Audio('assets/music/background.mp3');
-        this.bgMusic.volume = 0.00;
+        this.bgMusic.volume = 0.10;
         this.bgMusic.loop = true;
     }
     startMusic() {
         this.bgMusic.play();
     }
 }
-let duration = 40;
+let duration = 100;
 /* Credit: Code inspired by https://www.youtube.com/watch?v=3uuQ3g92oPQ */
 //Full game class
 class MatchThePairs {
@@ -191,9 +191,3 @@ window.onclick = function(event) {
     diffModal.style.display = "none";
   }
 };
-
-/*onclick easy button set duration 
- function easy() {
-    let duration = 100;
-    diffModal.style.display = "none";
-};*/
