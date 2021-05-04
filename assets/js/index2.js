@@ -180,14 +180,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
-/*-------------------------------------------Difficulty Modal*/
-var diffModal = document.getElementById("diffModal");
-var difficultyBtn = document.getElementById("difficulty-btn");
-difficultyBtn.onclick = function() {
-  diffModal.style.display = "block";
-};
-window.onclick = function(event) {
-  if (event.target == diffModal) {
-    diffModal.style.display = "none";
-  }
-};
