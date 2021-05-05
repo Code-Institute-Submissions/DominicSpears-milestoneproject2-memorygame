@@ -136,7 +136,8 @@ flip back to their original position.
 #### Navigation Buttons
 ##### Active
 * Reset button, resets the page to its original settings. 
-* Instructions button, reveals a modal with game instructions 
+* Instructions button, reveals a modal with game instructions. 
+* About button,  reveals health benefits of memory games.
 ##### To Do  
 * Reset button, reset the game without resetting the whole page and therefore other features e.g. the music.
 * Settings button, shows a new modal to provide user options e.g. music volume.
@@ -144,7 +145,12 @@ flip back to their original position.
 #### Instructions Modal
 ##### Active
 * Srollbar on the side of the page.
-* Return button resets the page to the starting screen, beginning the countdown again.  
+* Restart game button resets the page to the starting screen, beginning the countdown again.  
+
+#### About Modal
+##### Active
+* Srollbar on the side of the page.
+* Restart game button resets the page to the starting screen, beginning the countdown again.  
 
 #### Victory Modal
 ##### Active
@@ -233,7 +239,6 @@ ___
 
 ##### Music
 * Background music, taken from ZapSplat website via their standard license [ZapSplat](https://www.zapsplat.com/music/game-music-action-fun-and-funky-electronic-disco-with-wah-guitars-electro-bass-and-drums/)
-
 
 #### Acknowledgements
 

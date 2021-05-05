@@ -174,7 +174,22 @@
   * Move the page and reveal more information
   * Result: pass
 
-22. Instrutions return button
+22. Instructions return button
+  * Click return
+  * Resets the game from the start modal
+  * Result: pass
+
+23. About button
+  * Click instructions button
+  * Reveal instructions modal
+  * Result: pass
+
+24. About scrollbar
+  * Click and drag scrollbar
+  * Move the page and reveal more information, appears depenent of screen size
+  * Result: pass
+
+25. About return button
   * Click return
   * Resets the game from the start modal
   * Result: pass
